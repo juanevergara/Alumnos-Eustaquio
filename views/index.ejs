@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>alumnos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Alumnos UdeSa</h1>
+
+    <form action="/agregar">
+      <button> agregar alumno</button>
+    </form>
+    <form action="/agregarnota">
+      <button> agregar nota</button>
+    </form>
+
+    <h2>Alumnos registrados:</h2>
+    <ul>
+    <% for (let i = 0; i < data.length; i++) {%>
+      <a href="/detalle/<%=data[i].id %>"><li> <%= data[i].nombre%> <%= data[i].apellido %>: <%= data[i].legajo %></li></a>
+   <% } %>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>alumnos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Alumnos UdeSa</h1>
+    <h2>Complete los datos del alumno/a</h2>
+    <form action="/subir" method="POST">
+      <label>Nombre: </label> <br>
+       <input name="nombre" type="text" > <br>
+      <label>Apellido: </label> <br>
+       <input name="apellido" type="text" > <br>
+      <label>Fecha de nacimiento:</label> <br>
+      <input name="fechaNacimiento" type="date" > <br>
+      <label>Legajo:</label> <br>
+      <input name="legajo" type="number" ><br>
+      <button type="submit">cargar</button>
+    </form>
+  </body>
+</html>

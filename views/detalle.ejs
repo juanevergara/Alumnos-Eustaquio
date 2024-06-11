@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>alumnos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Alumnos UdeSa</h1>
+
+    <h2>Notas de <%= alumno.nombre %>:</h2>
+
+    <ul>
+        <% for (let i = 0; i < alumno.notas.length; i++) { %>
+            <li><%= alumno.notas[i].asignatura %> <%= alumno.notas[i].examen %>: <%= alumno.notas[i].nota%></li>
+        <% } %>
+    </ul>
+    <h3>Promedio de notas: <%= promedio %></h3>
+  </body>
+</html>

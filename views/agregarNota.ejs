@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>alumnos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Alumnos UdeSa</h1>
+    <h2>Complete los datos de la nota: </h2>
+    <form action="/subirnota" method="POST">
+      <label>Asignatura: </label> <br>
+       <input name="asignatura" type="text" > <br>
+      <label>Examen: </label> <br>
+      <select name="examen">
+        <option value="Parcialito">Parcialito</option>
+        <option value="Parcial">Parcial</option>
+        <option value="Final">Final</option>
+      </select> <br>
+      <label>Legajo del alumno/a:</label> <br>
+      <input name="legajo" type="number" ><br>
+      <label>Nota: </label><br>
+      <input type="number" name="nota">
+      <button type="submit">cargar</button>
+    </form>
+
+
+  
+  </body>
+</html>
